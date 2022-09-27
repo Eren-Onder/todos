@@ -1,5 +1,5 @@
 package com.ondereren.todo.controller;
-import com.ondereren.todo.model.todo;
+import com.ondereren.todo.model.Todo;
 import com.ondereren.todo.service.TodoService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
@@ -21,7 +21,7 @@ public class TodoController {
 
         @GetMapping("/getAll")
         public List<Todo> list(){
-            return todoService.getAllTodos();
+            return todoService.getAllTodo();
         }
 
         @DeleteMapping ("/delete")
